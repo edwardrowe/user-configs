@@ -9,10 +9,9 @@ HISTFILESIZE=2500
 shopt -s histappend
 
 # Environment Variables
+# show colors in ls
 export CLICOLOR=1
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source $GITAWAREPROMPT/main.sh
-export PS1="\u@\h \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+export LSCOLORS=gxfxcxdxbxegedabagacad
 export PATH=${PATH}:/Users/elrowe/Development/adt-bundle-mac-x86_64-20130514/sdk/platform-tools/
 
 # Colors for my prompt
@@ -23,14 +22,13 @@ BLUE="\[\033[0;34m\]"
 NO_COLOUR="\[\033[0m\]"
 
 # Git Configs
-if [ -f ~/.git-completion.bash ]; then
-. ~/.git-completion.bash
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+GIT_PS1_SHOWDIRTYSTATE=true
+if [ -f /opt/local/etc/bash_completion ]; then
+    . /opt/local/etc/bash_completion
 fi
 
 ## Now colorize my prompt
-#source ~/.bash/git-prompt
-#PS1="$GREEN\u@machine$YELLOW:\w$RED$(parse_git_branch_or_tag)$NO_COLOUR\$ "
-#PS1="$GREEN\u@machine$YELLOW:\w$RED$NO_COLOUR\$
-#"
-source ~/.bash/git-prompt
-PS1="$GREEN\u@machine$YELLOW:\w$RED\$(parse_git_branch_or_tag)$NO_COLOUR\$ "
+PS1="$GREEN\u@machine$YELLOW:\w$RED\$(__git_ps1)$NO_COLOUR\$ "
