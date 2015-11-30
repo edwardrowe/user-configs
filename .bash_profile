@@ -32,3 +32,6 @@ fi
 
 ## Now colorize my prompt
 PS1="$GREEN\u@machine$YELLOW:\w$RED\$(__git_ps1)$NO_COLOUR\$ "
+
+#Path shorcuts
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
