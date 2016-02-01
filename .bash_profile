@@ -35,3 +35,8 @@ PS1="$GREEN\u@machine$YELLOW:\w$RED\$(__git_ps1)$NO_COLOUR\$ "
 
 #Path shorcuts
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# MacPorts Installer addition on 2016-01-23_at_17:23:53: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
