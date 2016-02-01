@@ -22,6 +22,8 @@ So I like to start in my user directory and do
 `brew install git bash-completion`
 
 ##Installing Alternate Keyboard Layout
+This alternate keyboard layout disables the option key so that text editor bindings can make use of the option modifier for keybindings without typing in greek letters you'll never need.
+
 1) Create sym-link to keyboard layout
 
 `ln -s ~/Developer/user-configs/OptionDisabled.keylayout ~/Library/Keyboard\ Layouts/OptionDisabled.keylayout`
