@@ -37,5 +37,7 @@ This alternate keyboard layout disables the option key so that text editor bindi
 #Finder Setup
 ##Show Hidden files
 More info here: http://www.wikihow.com/Show-Hidden-Files-and-Folders-on-Mac-OS-X
+
 1) In Terminal type: defaults write com.apple.Finder AppleShowAllFiles YES
+
 2) Relaunch finder by alt-right clicking the icon in the side bar
