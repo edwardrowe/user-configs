@@ -33,3 +33,9 @@ This alternate keyboard layout disables the option key so that text editor bindi
 ![Keyboard Settings Input Sources](http://i.imgur.com/QIF4kUv.png)
 ![Add Other Source](http://i.imgur.com/oL5ZAA1.png)
 ![Switch to Alternate Input Source](http://i.imgur.com/VNkWHwz.png)
+
+#Finder Setup
+##Show Hidden files
+More info here: http://www.wikihow.com/Show-Hidden-Files-and-Folders-on-Mac-OS-X
+1) In Terminal type: defaults write com.apple.Finder AppleShowAllFiles YES
+2) Relaunch finder by alt-right clicking the icon in the side bar
