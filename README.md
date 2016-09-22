@@ -34,6 +34,12 @@ This alternate keyboard layout disables the option key so that text editor bindi
 ![Add Other Source](http://i.imgur.com/oL5ZAA1.png)
 ![Switch to Alternate Input Source](http://i.imgur.com/VNkWHwz.png)
 
+##Windows HotkeySetup
+
+1) Download AutoHotkey (unless repo has compiled AutoHotKey executables)
+
+2) Compile the AutoHotkey files and place them in the Windows Startup folder. Also run them.
+
 #Finder Setup
 ##Show Hidden files
 More info here: http://www.wikihow.com/Show-Hidden-Files-and-Folders-on-Mac-OS-X
