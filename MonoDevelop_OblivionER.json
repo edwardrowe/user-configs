@@ -1,0 +1,12 @@
+{
+	"name":"OblivionER",
+	"version":"1.0",
+	"description":"Oblivion plus personal tweaks",
+	"originator":"Xamarin Inc. (http://xamarin.com)",
+	"baseScheme":"Oblivion",
+	"colors":[
+	],
+	"text":[
+		{"name": "Collapsed Text", "fore":"#6A6A6A", "back":"#2D3436" }
+	]
+}
