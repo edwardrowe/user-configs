@@ -4,6 +4,11 @@ name = Edward Rowe
 email = edward.l.rowe@gmail.com
 [alias]
 cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+# From Github Flow Aliases http://haacked.com/archive/2014/07/28/github-flow-aliases/
+s = status -s
+st = status -s
+co = checkout
+cob = checkout -b
 
 [core]
 	excludesfile = /Users/erowe/.gitignore_global
@@ -22,7 +27,7 @@ cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1
 	trustExitCode = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
