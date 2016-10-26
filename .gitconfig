@@ -9,6 +9,7 @@ s = status -s
 st = status -s
 co = checkout
 cob = checkout -b
+lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 [core]
 	excludesfile = /Users/erowe/.gitignore_global
