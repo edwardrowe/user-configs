@@ -11,6 +11,11 @@ co = checkout
 cob = checkout -b
 lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
+# Git status goes to grep for question marks (which denote untracked files)
+# awk gets the second column of data (which is relative path here) using default space delimeter
+# Pipe the paths into xargs using token replacement (-J where token is {0}) into trash
+rmu = "! git status -s | grep \"??\" | awk '{print $2}' | xargs -J {0} mv {0} ~/.Trash"
+
 [core]
 	excludesfile = /Users/erowe/.gitignore_global
 	editor = atom --wait

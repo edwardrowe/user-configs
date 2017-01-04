@@ -1,4 +1,5 @@
 # Aliases
+# List files in time, reverse, long, all (hidden)
 alias ll='ls -trla'
 
 # History
@@ -39,4 +40,3 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 # MacPorts Installer addition on 2016-01-23_at_17:23:53: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
-
