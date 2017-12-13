@@ -1,7 +1,7 @@
 # User Configs
 A collection of my configs with instructions on how to install them
 
-#Installation
+# Installation
 1) Clone this repo into a new folder, prefably somewhere in your user (~/Development/user-configs)
 
 2) Create a symbolic link to the .bash_profile, in order to keep them up to date with the repo.
@@ -21,7 +21,7 @@ So I like to start in my user directory and do
 
 `brew install git bash-completion`
 
-##Installing Alternate Keyboard Layout
+## Installing Alternate Keyboard Layout
 This alternate keyboard layout disables the option key so that text editor bindings can make use of the option modifier for keybindings without typing in greek letters you'll never need.
 
 1) Create sym-link to keyboard layout
@@ -34,14 +34,14 @@ This alternate keyboard layout disables the option key so that text editor bindi
 ![Add Other Source](http://i.imgur.com/oL5ZAA1.png)
 ![Switch to Alternate Input Source](http://i.imgur.com/VNkWHwz.png)
 
-##Windows HotkeySetup
+## Windows HotkeySetup
 
 1) Download AutoHotkey (unless repo has compiled AutoHotKey executables)
 
 2) Compile the AutoHotkey files and place them in the Windows Startup folder. Also run them.
 
-#Finder Setup
-##Show Hidden files
+# Finder Setup
+## Show Hidden files
 More info here: http://www.wikihow.com/Show-Hidden-Files-and-Folders-on-Mac-OS-X
 
 1) In Terminal type: defaults write com.apple.Finder AppleShowAllFiles YES
