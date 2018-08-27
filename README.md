@@ -6,6 +6,8 @@ A collection of my configs with instructions on how to install them
 
 1) Create a sym-link for the git config to get git aliases: `ln -s ~/Development/user-configs/.gitconfig .gitconfig`
 
+1) Create a symbolic link to the .bash_profile, in order to keep them up to date with the repo: `ln -s ~/Development/user-configs/.bash_profile .bash_profile`
+
 1) Install homebrew (brew.sh) or paste this into terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 ### Using ZSH
@@ -15,8 +17,6 @@ A collection of my configs with instructions on how to install them
 1) Use Dracula themes https://draculatheme.com/
 
 ### Using Bash
-
-1) Create a symbolic link to the .bash_profile, in order to keep them up to date with the repo: `ln -s ~/Development/user-configs/.bash_profile .bash_profile`
 
 1) Install bash completion for git. 
 (For more info see [here](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)): `brew install git bash-completion`
