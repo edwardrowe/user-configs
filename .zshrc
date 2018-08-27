@@ -99,3 +99,8 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Install z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# disable errors when no files are matched in commands.
+# This is a workaround for git add -- *.cs not finding the files
+# https://superuser.com/questions/584249/using-wildcards-in-commands-with-zsh
+unsetopt nomatch
