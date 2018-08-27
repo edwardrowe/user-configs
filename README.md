@@ -12,11 +12,15 @@ So I like to start in my user directory and do
 
 `ln -s ~/Developer/user-configs/.bash_profile .bash_profile`
 
-3) Install homebrew (brew.sh) or paste this into terminal:
+3) Create a sym-link for the git profile as well
+
+`ln -s ~/Developer/user-configs/.gitconfig .gitconfig`
+
+4) Install homebrew (brew.sh) or paste this into terminal:
 
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-4) Install bash completion for git. 
+5) Install bash completion for git. 
 (For more info see [here](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion))
 
 `brew install git bash-completion`
