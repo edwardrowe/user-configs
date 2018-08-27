@@ -18,7 +18,7 @@ rmu = "! git status -s | grep \"??\" | awk '{print $2}' | xargs -J {0} mv {0} ~/
 
 [core]
 	excludesfile = /Users/erowe/.gitignore_global
-	editor = atom --wait
+	editor = code --wait
 [merge]
 	tool = p4mergetool
 [mergetool "p4mergetool"]
