@@ -10,7 +10,7 @@ A collection of my configs with instructions on how to install them
 
 So I like to start in my user directory and do 
 
-`ln -s ~/Developer/user-configs/.bash_profile .bash_profile`
+`ln -s ~/Development/user-configs/.bash_profile .bash_profile`
 
 3) Create a sym-link for the git profile as well
 
