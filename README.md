@@ -6,37 +6,38 @@ A collection of my configs with instructions on how to install them
 
 1) Create a sym-link for the git config to get git aliases: `ln -s ~/Development/user-configs/.gitconfig ~/.gitconfig`
 
-1) Create a symbolic link to the .bash_profile, in order to keep them up to date with the repo: `ln -s ~/Development/user-configs/.bash_profile .bash_profile`
+1) [Install homebrew](https://brew.sh/) (brew.sh) or paste this into terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-1) Install homebrew (brew.sh) or paste this into terminal: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+### Using ZSH and Oh-My-ZSH
+I used [this guide](http://jilles.me/badassify-your-terminal-and-shell/) to develop these steps.
 
-### Using ZSH
+1) [Install iTerm2](https://www.iterm2.com/)
 
-1) Follow this guide to install and pretty-ify your terminal: http://jilles.me/badassify-your-terminal-and-shell/
+This is just adds some terminal features. I'm not really sure I need this.
 
-1) Use Dracula themes https://draculatheme.com/
+2) Install Dracula Theme for iTerm2. (Also unsure I need this)
+
+* You can clone the git repro https://github.com/dracula/iterm.git
+* Or download it here https://draculatheme.com/
+   
+3) [Install Oh-My-ZSH](https://ohmyz.sh/)
+
+* This is basically just managing community zsh configurations. This allows for convenient theme management.
+
+4) Clone my Dracula for Zsh fork: git@github.com:edwardrowe/zsh.git into Development
+
+5) Add a sym-link to wire up dracula theme in OhMyZSH's themes
+
+`ln -s ~/Development/dracula-themes/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme`
+
+6) Add a sym-link to use the custom aliases from this repo with oh-my-zsh
+
+`ln -s ~/Development/user-configs/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh`
 
 ### Using Bash
 
 1) Install bash completion for git. 
 (For more info see [here](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)): `brew install git bash-completion`
-
-## Installing Alternate Keyboard Layout
-This alternate keyboard layout disables the option key so that text editor bindings can make use of the option modifier for keybindings without typing in greek letters you'll never need.
-
-1) Create sym-link to keyboard layout: `ln -s ~/Developer/user-configs/OptionDisabled.keylayout ~/Library/Keyboard\ Layouts/OptionDisabled.keylayout`
-
-2) Add the new layout to your input sources in Keyboard settings
-
-![Keyboard Settings Input Sources](http://i.imgur.com/QIF4kUv.png)
-![Add Other Source](http://i.imgur.com/oL5ZAA1.png)
-![Switch to Alternate Input Source](http://i.imgur.com/VNkWHwz.png)
-
-## Windows HotkeySetup
-
-1) Download AutoHotkey (unless repo has compiled AutoHotKey executables)
-
-2) Compile the AutoHotkey files and place them in the Windows Startup folder. Also run them.
 
 # Finder Setup
 ## Show Hidden files
