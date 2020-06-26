@@ -4,7 +4,7 @@ A collection of my configs with instructions on how to install them
 # Installation
 1) Clone this repo into a new folder, prefably somewhere in your user (~/Development/user-configs)
 
-1) Create a sym-link for the git config to get git aliases: `ln -s ~/Development/user-configs/.gitconfig .gitconfig`
+1) Create a sym-link for the git config to get git aliases: `ln -s ~/Development/user-configs/.gitconfig ~/.gitconfig`
 
 1) Create a symbolic link to the .bash_profile, in order to keep them up to date with the repo: `ln -s ~/Development/user-configs/.bash_profile .bash_profile`
 
