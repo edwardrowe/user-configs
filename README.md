@@ -34,7 +34,11 @@ This is just adds some terminal features. I'm not really sure I need this.
 
 `ln -s ~/Development/user-configs/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh`
 
+7) Turn on syntax highlighting by following the steps here https://jilles.me/badassify-your-terminal-and-shell/
+
 ### Using Bash
+
+(Not sure I need this since I'm using zsh)
 
 1) Install bash completion for git. 
 (For more info see [here](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion)): `brew install git bash-completion`
